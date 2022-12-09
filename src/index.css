@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-secondary text-secondary bg-gradient-to-b from-[#F6FAFD] to-[#FFFFFF] bg-no-repeat;
+    @apply font-primary text-primary bg-gradient-to-b from-[#F6FAFD] to-[#FFFFFF] bg-no-repeat;
   }
   h1,
   h2,
@@ -39,6 +39,6 @@
     @apply text-[24px];
   }
   .lead {
-    @apply text-lg text-secondary font-secondary font-medium leading-relaxed;
+    @apply text-lg text-secondary font-primary font-medium leading-relaxed;
   }
 }
