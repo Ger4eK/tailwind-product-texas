@@ -1,7 +1,7 @@
 
 function App() {
   return (
-    <div>
+    <div className=' conta'>
       <h1>Product Texas</h1>
     </div>
   );
