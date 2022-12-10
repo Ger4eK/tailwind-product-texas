@@ -23,7 +23,7 @@ const Hero = () => {
               right to where you are.
             </p>
             <button
-              className='btn btn-primary mb-8 xl:mb-0'
+              className='btn font-medium btn-primary mb-8 xl:mb-0'
               data-aos='fade-down'
               data-aos-delay='600'
             >
