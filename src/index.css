@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    @apply scroll-smooth;
+  }
+
   body {
     @apply font-primary text-primary bg-gradient-to-b from-[#F6FAFD] to-[#FFFFFF] bg-no-repeat;
   }

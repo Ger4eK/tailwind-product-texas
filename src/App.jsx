@@ -10,12 +10,31 @@ import Features from './components/Feature';
 import Testimonials from './components/Testimonials/Testimonials';
 import CtaSection from './components/CtaSection';
 import Footer from './components/Footer/Footer';
+import Top from './components/Top';
+import { useEffect, useState } from 'react';
 
 function App() {
   Aos.init({
     duration: 1800,
     offset: 0,
   });
+
+  const [top, setTop] = useState(false);
+
+  useEffect(() => {
+    const topActive = () => {
+      if (window.scrollY > 150) {
+        setTop(true);
+      } else {
+        setTop(false);
+      }
+    };
+    window.addEventListener('scroll', topActive);
+
+    return () => {
+      window.removeEventListener('scroll', topActive);
+    };
+  }, []);
 
   return (
     <div className='overflow-hidden'>
@@ -26,6 +45,7 @@ function App() {
       <Testimonials />
       <CtaSection />
       <Footer />
+      {top ? <Top /> : ''}
     </div>
   );
 }
