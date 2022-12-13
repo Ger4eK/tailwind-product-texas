@@ -1,12 +1,13 @@
 //! animate on scroll
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import About from './components/About';
-import Features from './components/Feature';
-import Header from './components/Header/Header';
 
 //! Components
+import Header from './components/Header/Header';
 import Hero from './components/Hero';
+import About from './components/About';
+import Features from './components/Feature';
+import Testimonials from './components/Testimonials/Testimonials';
 
 function App() {
   Aos.init({
@@ -20,6 +21,7 @@ function App() {
       <Hero />
       <About />
       <Features />
+      <Testimonials />
     </div>
   );
 }
