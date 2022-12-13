@@ -24,7 +24,7 @@
     @apply bg-accent-primary hover:bg-accent-primary_hover;
   }
   .btn-secondary {
-    @apply bg-accent-secondary hover:bg-accent-secondary_hover;
+    @apply bg-accent-secondary font-medium hover:bg-accent-secondary_hover;
   }
   .btn-quaternary {
     @apply bg-white text-base font-bold text-primary drop-shadow-primary hover:bg-accent-primary_hover hover:text-white;
